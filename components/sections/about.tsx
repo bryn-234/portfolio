@@ -1,21 +1,19 @@
 import { Badge } from "@/components/ui/badge"
 
 const skills = [
-  "Python",
   "Java",
   "C/C++",
-  "JavaScript",
-  "TypeScript",
+  "Python",
+  "Julia",
+  "MIPS Assembly",
   "Verilog",
   "SQL",
-  "React",
-  "Node.js",
   "PostgreSQL",
-  "Git",
-  "Docker",
-  "AWS",
-  "TensorFlow",
-  "PyTorch",
+  "Spring",
+  "GitHub",
+  "Vivado",
+  "Neon",
+  "PSpice",
 ]
 
 export function About() {
@@ -28,20 +26,20 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4">
             <p className="text-muted-foreground leading-relaxed">
-              I&apos;m a junior pursuing a B.S. in Computer Science at the University of Arizona 
-              with a 3.8 GPA. My journey in tech spans from low-level hardware design with 
-              Verilog to building full-stack web applications and exploring machine learning.
+              I&apos;m pursuing a B.S. in Computer Science and Engineering at the University of Arizona 
+              in the W.A. Franke Honors College, with minors in Mathematics and Electrical Engineering. 
+              I maintain a 3.9 GPA and have studied abroad in Greece.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Last summer, I interned at Raytheon RTX where I developed real-time data 
-              processing pipelines and worked on radar signal analysis tools. I&apos;m also 
-              an undergraduate research assistant at the UA Artificial Intelligence Lab, 
-              where I contribute to computer vision research using deep learning.
+              Currently, I&apos;m a Software Engineering Intern at HartSci, where I&apos;m building 
+              a Julia-based data visualization application for adaptive optics systems. My work 
+              involves transforming raw system inputs into interpretable plots and dashboards 
+              for non-technical users.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Outside of academics, I serve as Vice President of the ACM Student Chapter, 
-              organizing hackathons and tech talks for our 200+ member community. I&apos;m 
-              currently seeking Summer 2026 internship opportunities in software engineering.
+              Outside of academics, I serve as Vice President of UA Club Tennis, managing a 150+ 
+              member roster and handling team logistics. I also represent the College of Engineering 
+              as an Engineering Ambassador, leading campus tours and recruitment events.
             </p>
           </div>
           

@@ -13,44 +13,33 @@ function GitHubIcon({ className }: { className?: string }) {
 
 const featuredProjects = [
   {
-    title: "Hospital Management System",
+    title: "Bakery Database",
     description:
-      "A comprehensive hospital management system built for SFWE 405 Software Engineering course. Features patient registration, appointment scheduling, medical records management, and staff administration with role-based access control.",
-    tech: ["Java", "JavaFX", "MySQL", "Maven"],
-    github: "https://github.com/bryn-234/SFWE405Hospital",
+      "Designed a multi-entity relational database using a 20,000 transaction dataset. Built a cloud-hosted PostgreSQL database using Neon with normalized schemas, data integrity constraints, and optimized analytical queries. Conducted benchmarking tests comparing indexed vs. non-indexed queries.",
+    tech: ["PostgreSQL", "SQL", "Neon", "Database Design"],
+    github: "https://github.com/bryn-234/bakery-database",
   },
   {
-    title: "MIPS Pipeline Processor",
+    title: "Pipelined MIPS Datapath",
     description:
-      "A fully pipelined 5-stage MIPS processor implemented in Verilog. Includes hazard detection, data forwarding, and branch prediction. Verified through extensive testbenches and synthesized for FPGA deployment.",
-    tech: ["Verilog", "MIPS Assembly", "ModelSim", "Quartus"],
-    github: "https://github.com/bryn-234/mips-pipeline-verilog",
+      "Implemented a 5-stage pipelined MIPS datapath in Verilog with ALU, register file, control unit, and pipeline registers. Applied NOP-based hazard mitigation to ensure correct execution across hazards. Verified functionality through Vivado waveform simulation and FPGA board testing.",
+    tech: ["Verilog", "MIPS Assembly", "Vivado", "FPGA"],
+    github: "https://github.com/bryn-234/mips-pipeline",
   },
   {
     title: "Game of Trains",
     description:
-      "A digital recreation of the popular card game 'Game of Trains' implemented in C. Features AI opponents with multiple difficulty levels, game state persistence, and a terminal-based UI with color support.",
-    tech: ["C", "Data Structures", "Algorithms", "ncurses"],
+      "Built a digital version of the card game in C, implementing gameplay mechanics and data structures for card management, player turns, and game state tracking.",
+    tech: ["C", "Data Structures", "Algorithms"],
     github: "https://github.com/bryn-234/game-of-trains",
   },
 ]
 
 const otherProjects = [
   {
-    title: "Bakery Sales Database",
-    description: "A PostgreSQL database system for managing bakery sales, inventory, and customer data. Includes complex queries, stored procedures, and performance optimization.",
-    tech: ["PostgreSQL", "SQL", "Database Design"],
-    github: "https://github.com/bryn-234/bakery-database",
-  },
-  {
-    title: "Computer Vision Research",
-    description: "Undergraduate research at UA AI Lab developing novel approaches for object detection using deep learning. Working with TensorFlow and PyTorch on custom datasets.",
-    tech: ["Python", "TensorFlow", "PyTorch", "OpenCV"],
-  },
-  {
-    title: "Radar Signal Processor",
-    description: "Real-time data processing pipeline developed during Raytheon RTX internship. Handles high-throughput sensor data with optimized algorithms.",
-    tech: ["Python", "C++", "NumPy", "Signal Processing"],
+    title: "Adaptive Optics Visualizer",
+    description: "Julia-based data visualization application transforming raw system inputs into interpretable plots and dashboards. Built during internship at HartSci.",
+    tech: ["Julia", "Data Visualization", "Linux"],
   },
   {
     title: "Portfolio Website",

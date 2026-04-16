@@ -6,40 +6,37 @@ import { cn } from "@/lib/utils"
 
 const experiences = [
   {
-    company: "Raytheon RTX",
+    company: "HartSci",
     role: "Software Engineering Intern",
-    period: "May 2025 - Aug 2025",
+    period: "Jan 2026 - Present",
     description: [
-      "Developed real-time data processing pipelines for radar signal analysis using Python and C++",
-      "Optimized existing algorithms achieving 40% improvement in processing throughput",
-      "Collaborated with cross-functional teams on mission-critical defense software systems",
-      "Implemented automated testing frameworks increasing code coverage by 25%",
+      "Creating a Julia-based data visualization application to transform raw system inputs into interpretable plots and dashboards for non-technical users",
+      "Developing functions to process and analyze data for adaptive optics system optimization",
+      "Working in a Linux-based development environment using command-line tools and version control",
     ],
-    tech: ["Python", "C++", "Signal Processing", "Git"],
-  },
-  {
-    company: "UA Artificial Intelligence Lab",
-    role: "Undergraduate Research Assistant",
-    period: "Jan 2025 - Present",
-    description: [
-      "Contributing to computer vision research focusing on object detection algorithms",
-      "Developing and training deep learning models using TensorFlow and PyTorch",
-      "Processing and augmenting large-scale image datasets for model training",
-      "Presenting research findings at weekly lab meetings and collaborating with graduate students",
-    ],
-    tech: ["Python", "TensorFlow", "PyTorch", "OpenCV"],
+    tech: ["Julia", "Linux", "Git", "Data Visualization"],
   },
   {
     company: "University of Arizona",
-    role: "Teaching Assistant - CSC 110",
-    period: "Aug 2024 - Dec 2024",
+    role: "Engineering Ambassador",
+    period: "Aug 2025 - Present",
     description: [
-      "Led weekly lab sessions for 30+ students in Introduction to Computer Programming",
-      "Held office hours providing one-on-one assistance with Python programming concepts",
-      "Graded assignments and provided constructive feedback to help students improve",
-      "Developed supplementary learning materials and practice problems",
+      "Represent the College of Engineering at recruitment events and open houses",
+      "Lead campus tours for prospective students and their families",
+      "Share personal experiences to inspire and guide future engineering students",
     ],
-    tech: ["Python", "Teaching", "Curriculum Development"],
+    tech: ["Public Speaking", "Leadership", "Outreach"],
+  },
+  {
+    company: "UA Semiconductor Fast Track",
+    role: "Program Participant",
+    period: "Feb 2025 - April 2025",
+    description: [
+      "Presented a comprehensive solution for semiconductor shortages to industry professionals",
+      "Addressed location selection criteria, economic impact analysis, and community considerations",
+      "Collaborated with peers on research and presentation development",
+    ],
+    tech: ["Research", "Presentation", "Industry Analysis"],
   },
 ]
 
