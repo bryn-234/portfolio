@@ -11,7 +11,15 @@ function GitHubIcon({ className }: { className?: string }) {
   )
 }
 
-const featuredProjects = [
+type Project = {
+  title: string
+  description: string
+  tech: string[]
+  github?: string
+  live?: string
+}
+
+const featuredProjects: Project[] = [
   {
     title: "Bakery Database",
     description:
@@ -35,17 +43,20 @@ const featuredProjects = [
   },
 ]
 
-const otherProjects = [
+const otherProjects: Project[] = [
   {
     title: "Adaptive Optics Visualizer",
-    description: "Julia-based data visualization application transforming raw system inputs into interpretable plots and dashboards. Built during internship at HartSci.",
+    description:
+      "Julia-based data visualization application transforming raw system inputs into interpretable plots and dashboards. Built during internship at HartSci.",
     tech: ["Julia", "Data Visualization", "Linux"],
   },
   {
     title: "Portfolio Website",
-    description: "This very website! Built with Next.js and Tailwind CSS, featuring smooth animations and full dark mode support.",
+    description:
+      "This portfolio website built with Next.js and Tailwind CSS.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS"],
     github: "https://github.com/bryn-234/portfolio",
+    live: "https://v0-brynneal.vercel.app/",
   },
 ]
 
@@ -56,9 +67,8 @@ export function Projects() {
         <h2 className="text-sm font-mono text-primary mb-2">02.</h2>
         <h3 className="text-2xl sm:text-3xl font-bold mb-12">Projects</h3>
 
-        {/* Featured Projects */}
         <div className="space-y-12 mb-16">
-          {featuredProjects.map((project, index) => (
+          {featuredProjects.map((project) => (
             <Card key={project.title} className="overflow-hidden border-border/50">
               <CardHeader>
                 <div className="flex items-start justify-between gap-4">
@@ -112,7 +122,6 @@ export function Projects() {
           ))}
         </div>
 
-        {/* Other Projects */}
         <h4 className="text-xl font-semibold mb-6 text-center">
           Other Noteworthy Projects
         </h4>
@@ -125,17 +134,30 @@ export function Projects() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <Folder className="h-8 w-8 text-primary" />
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-foreground transition-colors"
-                      aria-label={`View ${project.title} on GitHub`}
-                    >
-                      <GitHubIcon className="h-5 w-5" />
-                    </a>
-                  )}
+                  <div className="flex items-center gap-2">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label={`View ${project.title} on GitHub`}
+                      >
+                        <GitHubIcon className="h-5 w-5" />
+                      </a>
+                    )}
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-foreground transition-colors"
+                        aria-label={`View ${project.title} live`}
+                      >
+                        <ExternalLink className="h-5 w-5" />
+                      </a>
+                    )}
+                  </div>
                 </div>
                 <CardTitle className="text-lg">{project.title}</CardTitle>
               </CardHeader>
