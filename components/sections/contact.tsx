@@ -22,18 +22,18 @@ export function Contact() {
     <section id="contact" className="py-24 px-6">
       <div className="mx-auto max-w-5xl">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-sm font-mono text-primary mb-2">05.</h2>
+          <h2 className="text-sm font-mono text-primary mb-2">06.</h2>
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">Get In Touch</h3>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            I&apos;m currently looking for Summer 2026 internship opportunities in software 
-            engineering. I&apos;m always open to discussing new projects, research collaborations, 
-            or opportunities to be part of something impactful. Whether you have a question 
-            or just want to say hi, feel free to reach out!
+            I&apos;m a Computer Science and Engineering student at the University of Arizona
+            with interests in software engineering, systems, data-driven applications,
+            and hardware-software integration. I&apos;m always open to connecting about
+            internships, research, projects, or new opportunities.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button size="lg" asChild>
-              <a href="mailto:brynneal@arizona.edu">
+              <a href="mailto:bneal1@arizona.edu">
                 <Mail className="mr-2 h-4 w-4" />
                 Say Hello
               </a>
@@ -51,7 +51,7 @@ export function Contact() {
               <GitHubIcon className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/brynneal"
+              href="https://www.linkedin.com/in/bryn-neal/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -60,7 +60,7 @@ export function Contact() {
               <LinkedInIcon className="h-6 w-6" />
             </a>
             <a
-              href="mailto:brynneal@arizona.edu"
+              href="mailto:bneal1@arizona.edu"
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Email"
             >

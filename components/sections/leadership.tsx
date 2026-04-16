@@ -1,38 +1,38 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Users, Award, BookOpen, Code } from "lucide-react"
+import { Users, Megaphone, Trophy, GraduationCap } from "lucide-react"
 
 const activities = [
   {
-    icon: Code,
-    title: "ACM Student Chapter",
+    icon: Trophy,
+    title: "University of Arizona Club Tennis",
     role: "Vice President",
-    period: "2024 - Present",
+    period: "Aug. 2023 - Present",
     description:
-      "Lead a team organizing hackathons, tech talks, and networking events for 200+ members. Coordinate with industry sponsors and manage chapter operations and outreach.",
+      "Manage a 150+ member roster, oversee scheduling, and coordinate team travel logistics for tournaments and events.",
+  },
+  {
+    icon: Megaphone,
+    title: "Engineering Ambassadors",
+    role: "Engineering Ambassador",
+    period: "Aug. 2025 - Present",
+    description:
+      "Represent the College of Engineering at recruitment events and lead campus tours for prospective students and families.",
+  },
+  {
+    icon: GraduationCap,
+    title: "Semiconductor Industry Fast Track Program",
+    role: "Participant",
+    period: "Feb. 2025 - Apr. 2025",
+    description:
+      "Worked on a team solution addressing semiconductor shortages, including location selection, economic impact, and community benefits and detriments.",
   },
   {
     icon: Users,
-    title: "Engineering Ambassadors",
-    role: "Student Ambassador",
+    title: "W.A. Franke Honors College",
+    role: "Honors Student",
     period: "2023 - Present",
     description:
-      "Represent the College of Engineering at recruitment events, campus tours, and outreach programs. Mentor prospective students and share experiences to inspire future engineers.",
-  },
-  {
-    icon: Award,
-    title: "HackArizona",
-    role: "Participant & Mentor",
-    period: "2024, 2025",
-    description:
-      "Competed in Arizona's largest collegiate hackathon, building projects in 24-hour sprints. Returned as a mentor to guide first-time participants through ideation and development.",
-  },
-  {
-    icon: BookOpen,
-    title: "CS Tutoring Center",
-    role: "Peer Tutor",
-    period: "2024 - Present",
-    description:
-      "Provide drop-in tutoring for introductory CS courses including CSC 110 and CSC 120. Help students with Python fundamentals, debugging, and problem-solving strategies.",
+      "Pursuing a B.S. in Computer Science and Engineering at the University of Arizona while also completing minors in Mathematics and Electrical Engineering.",
   },
 ]
 
@@ -40,7 +40,7 @@ export function Leadership() {
   return (
     <section id="leadership" className="py-24 px-6 bg-muted/30">
       <div className="mx-auto max-w-5xl">
-        <h2 className="text-sm font-mono text-primary mb-2">04.</h2>
+        <h2 className="text-sm font-mono text-primary mb-2">05.</h2>
         <h3 className="text-2xl sm:text-3xl font-bold mb-12">Leadership & Activities</h3>
 
         <div className="grid sm:grid-cols-2 gap-6">
@@ -55,12 +55,8 @@ export function Leadership() {
                     </div>
                     <div className="flex-1">
                       <CardTitle className="text-lg">{activity.title}</CardTitle>
-                      <p className="text-sm text-primary font-medium">
-                        {activity.role}
-                      </p>
-                      <p className="text-xs text-muted-foreground font-mono">
-                        {activity.period}
-                      </p>
+                      <p className="text-sm text-primary font-medium">{activity.role}</p>
+                      <p className="text-xs text-muted-foreground font-mono">{activity.period}</p>
                     </div>
                   </div>
                 </CardHeader>
