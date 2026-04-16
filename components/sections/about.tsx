@@ -2,17 +2,20 @@ import { Badge } from "@/components/ui/badge"
 
 const skills = [
   "Python",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "C++",
   "Java",
+  "C/C++",
+  "JavaScript",
+  "TypeScript",
+  "Verilog",
   "SQL",
+  "React",
+  "Node.js",
+  "PostgreSQL",
   "Git",
-  "AWS",
   "Docker",
-  "Machine Learning",
+  "AWS",
+  "TensorFlow",
+  "PyTorch",
 ]
 
 export function About() {
@@ -25,21 +28,20 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4">
             <p className="text-muted-foreground leading-relaxed">
-              I&apos;m a Computer Science and Engineering student with a deep curiosity 
-              for how technology can solve real-world problems. My journey in tech began 
-              with building simple websites and has evolved into a passion for full-stack 
-              development, systems programming, and exploring the frontiers of AI.
+              I&apos;m a junior pursuing a B.S. in Computer Science at the University of Arizona 
+              with a 3.8 GPA. My journey in tech spans from low-level hardware design with 
+              Verilog to building full-stack web applications and exploring machine learning.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I&apos;m not coding, you&apos;ll find me contributing to open-source projects, 
-              mentoring fellow students, or diving into research on distributed systems. 
-              I believe in writing clean, maintainable code and building products that 
-              genuinely help people.
+              Last summer, I interned at Raytheon RTX where I developed real-time data 
+              processing pipelines and worked on radar signal analysis tools. I&apos;m also 
+              an undergraduate research assistant at the UA Artificial Intelligence Lab, 
+              where I contribute to computer vision research using deep learning.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Currently, I&apos;m focused on expanding my knowledge in cloud architecture 
-              and machine learning while seeking opportunities to apply these skills 
-              in impactful internships and projects.
+              Outside of academics, I serve as Vice President of the ACM Student Chapter, 
+              organizing hackathons and tech talks for our 200+ member community. I&apos;m 
+              currently seeking Summer 2026 internship opportunities in software engineering.
             </p>
           </div>
           

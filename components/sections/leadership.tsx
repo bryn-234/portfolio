@@ -3,36 +3,36 @@ import { Users, Award, BookOpen, Code } from "lucide-react"
 
 const activities = [
   {
-    icon: Users,
-    title: "CS Student Association",
+    icon: Code,
+    title: "ACM Student Chapter",
     role: "Vice President",
     period: "2024 - Present",
     description:
-      "Lead a team of 15 officers organizing hackathons, tech talks, and networking events for 500+ members. Increased event attendance by 40% through improved outreach strategies.",
+      "Lead a team organizing hackathons, tech talks, and networking events for 200+ members. Coordinate with industry sponsors and manage chapter operations and outreach.",
   },
   {
-    icon: Code,
-    title: "Open Source Club",
-    role: "Project Lead",
+    icon: Users,
+    title: "Engineering Ambassadors",
+    role: "Student Ambassador",
     period: "2023 - Present",
     description:
-      "Guide weekly sessions introducing students to open source contribution. Led 20+ students through their first pull requests to major projects including React and VS Code.",
-  },
-  {
-    icon: BookOpen,
-    title: "Peer Tutoring Program",
-    role: "Senior Tutor",
-    period: "2023 - Present",
-    description:
-      "Provide one-on-one tutoring for Data Structures and Algorithms courses. Mentored 30+ students with average grade improvement of one letter grade.",
+      "Represent the College of Engineering at recruitment events, campus tours, and outreach programs. Mentor prospective students and share experiences to inspire future engineers.",
   },
   {
     icon: Award,
-    title: "Hackathon Organizer",
-    role: "Technical Director",
-    period: "2024",
+    title: "HackArizona",
+    role: "Participant & Mentor",
+    period: "2024, 2025",
     description:
-      "Organized annual 48-hour hackathon with 300+ participants. Managed technical infrastructure, mentored teams, and coordinated with 15+ sponsor companies.",
+      "Competed in Arizona's largest collegiate hackathon, building projects in 24-hour sprints. Returned as a mentor to guide first-time participants through ideation and development.",
+  },
+  {
+    icon: BookOpen,
+    title: "CS Tutoring Center",
+    role: "Peer Tutor",
+    period: "2024 - Present",
+    description:
+      "Provide drop-in tutoring for introductory CS courses including CSC 110 and CSC 120. Help students with Python fundamentals, debugging, and problem-solving strategies.",
   },
 ]
 

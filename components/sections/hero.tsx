@@ -30,9 +30,9 @@ export function Hero() {
             Computer Science & Engineering Student
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-xl">
-            I&apos;m passionate about building software that makes a difference. 
-            Currently exploring the intersection of systems design, machine learning, 
-            and user experience to create meaningful digital solutions.
+            I&apos;m a junior at the University of Arizona pursuing a B.S. in Computer Science. 
+            With experience at Raytheon RTX and the UA Artificial Intelligence Lab, I&apos;m 
+            passionate about building robust systems and exploring the frontiers of machine learning.
           </p>
           
           <div className="flex flex-wrap items-center gap-4 mb-12">
@@ -46,7 +46,7 @@ export function Hero() {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://github.com"
+              href="https://github.com/bryn-234"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -55,7 +55,7 @@ export function Hero() {
               <GitHubIcon className="h-5 w-5" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/brynneal"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -64,7 +64,7 @@ export function Hero() {
               <LinkedInIcon className="h-5 w-5" />
             </a>
             <a
-              href="mailto:bryn@example.com"
+              href="mailto:brynneal@arizona.edu"
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Email"
             >

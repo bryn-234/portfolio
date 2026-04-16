@@ -13,50 +13,50 @@ function GitHubIcon({ className }: { className?: string }) {
 
 const featuredProjects = [
   {
-    title: "TaskFlow AI",
+    title: "Hospital Management System",
     description:
-      "An intelligent task management application that uses machine learning to predict task priorities and suggest optimal scheduling. Features real-time collaboration and natural language processing for quick task entry.",
-    tech: ["React", "Node.js", "Python", "TensorFlow", "PostgreSQL"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A comprehensive hospital management system built for SFWE 405 Software Engineering course. Features patient registration, appointment scheduling, medical records management, and staff administration with role-based access control.",
+    tech: ["Java", "JavaFX", "MySQL", "Maven"],
+    github: "https://github.com/bryn-234/SFWE405Hospital",
   },
   {
-    title: "Distributed File System",
+    title: "MIPS Pipeline Processor",
     description:
-      "A fault-tolerant distributed file system implementing the Raft consensus algorithm. Supports automatic replication, leader election, and handles network partitions gracefully.",
-    tech: ["Go", "gRPC", "Docker", "Kubernetes"],
-    github: "https://github.com",
+      "A fully pipelined 5-stage MIPS processor implemented in Verilog. Includes hazard detection, data forwarding, and branch prediction. Verified through extensive testbenches and synthesized for FPGA deployment.",
+    tech: ["Verilog", "MIPS Assembly", "ModelSim", "Quartus"],
+    github: "https://github.com/bryn-234/mips-pipeline-verilog",
   },
   {
-    title: "EcoTrack",
+    title: "Game of Trains",
     description:
-      "A mobile-first web application helping users track and reduce their carbon footprint. Integrates with smart home devices and provides personalized sustainability recommendations.",
-    tech: ["Next.js", "TypeScript", "Prisma", "IoT APIs"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "A digital recreation of the popular card game 'Game of Trains' implemented in C. Features AI opponents with multiple difficulty levels, game state persistence, and a terminal-based UI with color support.",
+    tech: ["C", "Data Structures", "Algorithms", "ncurses"],
+    github: "https://github.com/bryn-234/game-of-trains",
   },
 ]
 
 const otherProjects = [
   {
-    title: "Compiler for Mini-Lang",
-    description: "A complete compiler for a custom programming language featuring lexical analysis, parsing, semantic analysis, and code generation targeting x86 assembly.",
-    tech: ["C++", "LLVM"],
+    title: "Bakery Sales Database",
+    description: "A PostgreSQL database system for managing bakery sales, inventory, and customer data. Includes complex queries, stored procedures, and performance optimization.",
+    tech: ["PostgreSQL", "SQL", "Database Design"],
+    github: "https://github.com/bryn-234/bakery-database",
   },
   {
-    title: "Real-time Chat Application",
-    description: "WebSocket-based chat application with end-to-end encryption, supporting group chats, file sharing, and message reactions.",
-    tech: ["Socket.io", "React", "Redis"],
+    title: "Computer Vision Research",
+    description: "Undergraduate research at UA AI Lab developing novel approaches for object detection using deep learning. Working with TensorFlow and PyTorch on custom datasets.",
+    tech: ["Python", "TensorFlow", "PyTorch", "OpenCV"],
   },
   {
-    title: "ML Model Playground",
-    description: "Interactive web interface for visualizing and experimenting with machine learning algorithms, from linear regression to neural networks.",
-    tech: ["Python", "Streamlit", "Scikit-learn"],
+    title: "Radar Signal Processor",
+    description: "Real-time data processing pipeline developed during Raytheon RTX internship. Handles high-throughput sensor data with optimized algorithms.",
+    tech: ["Python", "C++", "NumPy", "Signal Processing"],
   },
   {
     title: "Portfolio Website",
     description: "This very website! Built with Next.js and Tailwind CSS, featuring smooth animations and full dark mode support.",
-    tech: ["Next.js", "Tailwind CSS"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/bryn-234/portfolio",
   },
 ]
 
@@ -136,6 +136,17 @@ export function Projects() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <Folder className="h-8 w-8 text-primary" />
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={`View ${project.title} on GitHub`}
+                    >
+                      <GitHubIcon className="h-5 w-5" />
+                    </a>
+                  )}
                 </div>
                 <CardTitle className="text-lg">{project.title}</CardTitle>
               </CardHeader>
