@@ -25,15 +25,15 @@ export function Contact() {
           <h2 className="text-sm font-mono text-primary mb-2">05.</h2>
           <h3 className="text-2xl sm:text-3xl font-bold mb-4">Get In Touch</h3>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            I&apos;m currently looking for internship opportunities for Summer 2026 and am 
-            always open to discussing new projects, creative ideas, or opportunities to 
-            be part of something impactful. Whether you have a question or just want to 
-            say hi, feel free to reach out!
+            I&apos;m currently looking for Summer 2026 internship opportunities in software 
+            engineering. I&apos;m always open to discussing new projects, research collaborations, 
+            or opportunities to be part of something impactful. Whether you have a question 
+            or just want to say hi, feel free to reach out!
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button size="lg" asChild>
-              <a href="mailto:bryn@example.com">
+              <a href="mailto:brynneal@arizona.edu">
                 <Mail className="mr-2 h-4 w-4" />
                 Say Hello
               </a>
@@ -42,7 +42,7 @@ export function Contact() {
 
           <div className="flex items-center justify-center gap-6">
             <a
-              href="https://github.com"
+              href="https://github.com/bryn-234"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -51,7 +51,7 @@ export function Contact() {
               <GitHubIcon className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://linkedin.com/in/brynneal"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -60,7 +60,7 @@ export function Contact() {
               <LinkedInIcon className="h-6 w-6" />
             </a>
             <a
-              href="mailto:bryn@example.com"
+              href="mailto:brynneal@arizona.edu"
               className="text-muted-foreground hover:text-foreground transition-colors"
               aria-label="Email"
             >

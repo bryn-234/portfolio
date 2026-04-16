@@ -13,50 +13,39 @@ function GitHubIcon({ className }: { className?: string }) {
 
 const featuredProjects = [
   {
-    title: "TaskFlow AI",
+    title: "Bakery Database",
     description:
-      "An intelligent task management application that uses machine learning to predict task priorities and suggest optimal scheduling. Features real-time collaboration and natural language processing for quick task entry.",
-    tech: ["React", "Node.js", "Python", "TensorFlow", "PostgreSQL"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "Designed a multi-entity relational database using a 20,000 transaction dataset. Built a cloud-hosted PostgreSQL database using Neon with normalized schemas, data integrity constraints, and optimized analytical queries. Conducted benchmarking tests comparing indexed vs. non-indexed queries.",
+    tech: ["PostgreSQL", "SQL", "Neon", "Database Design"],
+    github: "https://github.com/bryn-234/bakery-database",
   },
   {
-    title: "Distributed File System",
+    title: "Pipelined MIPS Datapath",
     description:
-      "A fault-tolerant distributed file system implementing the Raft consensus algorithm. Supports automatic replication, leader election, and handles network partitions gracefully.",
-    tech: ["Go", "gRPC", "Docker", "Kubernetes"],
-    github: "https://github.com",
+      "Implemented a 5-stage pipelined MIPS datapath in Verilog with ALU, register file, control unit, and pipeline registers. Applied NOP-based hazard mitigation to ensure correct execution across hazards. Verified functionality through Vivado waveform simulation and FPGA board testing.",
+    tech: ["Verilog", "MIPS Assembly", "Vivado", "FPGA"],
+    github: "https://github.com/bryn-234/mips-pipeline",
   },
   {
-    title: "EcoTrack",
+    title: "Game of Trains",
     description:
-      "A mobile-first web application helping users track and reduce their carbon footprint. Integrates with smart home devices and provides personalized sustainability recommendations.",
-    tech: ["Next.js", "TypeScript", "Prisma", "IoT APIs"],
-    github: "https://github.com",
-    live: "https://example.com",
+      "Built a digital version of the card game in C, implementing gameplay mechanics and data structures for card management, player turns, and game state tracking.",
+    tech: ["C", "Data Structures", "Algorithms"],
+    github: "https://github.com/bryn-234/game-of-trains",
   },
 ]
 
 const otherProjects = [
   {
-    title: "Compiler for Mini-Lang",
-    description: "A complete compiler for a custom programming language featuring lexical analysis, parsing, semantic analysis, and code generation targeting x86 assembly.",
-    tech: ["C++", "LLVM"],
-  },
-  {
-    title: "Real-time Chat Application",
-    description: "WebSocket-based chat application with end-to-end encryption, supporting group chats, file sharing, and message reactions.",
-    tech: ["Socket.io", "React", "Redis"],
-  },
-  {
-    title: "ML Model Playground",
-    description: "Interactive web interface for visualizing and experimenting with machine learning algorithms, from linear regression to neural networks.",
-    tech: ["Python", "Streamlit", "Scikit-learn"],
+    title: "Adaptive Optics Visualizer",
+    description: "Julia-based data visualization application transforming raw system inputs into interpretable plots and dashboards. Built during internship at HartSci.",
+    tech: ["Julia", "Data Visualization", "Linux"],
   },
   {
     title: "Portfolio Website",
     description: "This very website! Built with Next.js and Tailwind CSS, featuring smooth animations and full dark mode support.",
-    tech: ["Next.js", "Tailwind CSS"],
+    tech: ["Next.js", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/bryn-234/portfolio",
   },
 ]
 
@@ -136,6 +125,17 @@ export function Projects() {
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <Folder className="h-8 w-8 text-primary" />
+                  {project.github && (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-colors"
+                      aria-label={`View ${project.title} on GitHub`}
+                    >
+                      <GitHubIcon className="h-5 w-5" />
+                    </a>
+                  )}
                 </div>
                 <CardTitle className="text-lg">{project.title}</CardTitle>
               </CardHeader>

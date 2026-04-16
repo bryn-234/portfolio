@@ -1,18 +1,19 @@
 import { Badge } from "@/components/ui/badge"
 
 const skills = [
-  "Python",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "C++",
   "Java",
+  "C/C++",
+  "Python",
+  "Julia",
+  "MIPS Assembly",
+  "Verilog",
   "SQL",
-  "Git",
-  "AWS",
-  "Docker",
-  "Machine Learning",
+  "PostgreSQL",
+  "Spring",
+  "GitHub",
+  "Vivado",
+  "Neon",
+  "PSpice",
 ]
 
 export function About() {
@@ -25,21 +26,20 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4">
             <p className="text-muted-foreground leading-relaxed">
-              I&apos;m a Computer Science and Engineering student with a deep curiosity 
-              for how technology can solve real-world problems. My journey in tech began 
-              with building simple websites and has evolved into a passion for full-stack 
-              development, systems programming, and exploring the frontiers of AI.
+              I&apos;m pursuing a B.S. in Computer Science and Engineering at the University of Arizona 
+              in the W.A. Franke Honors College, with minors in Mathematics and Electrical Engineering. 
+              I maintain a 3.9 GPA and have studied abroad in Greece.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              When I&apos;m not coding, you&apos;ll find me contributing to open-source projects, 
-              mentoring fellow students, or diving into research on distributed systems. 
-              I believe in writing clean, maintainable code and building products that 
-              genuinely help people.
+              Currently, I&apos;m a Software Engineering Intern at HartSci, where I&apos;m building 
+              a Julia-based data visualization application for adaptive optics systems. My work 
+              involves transforming raw system inputs into interpretable plots and dashboards 
+              for non-technical users.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Currently, I&apos;m focused on expanding my knowledge in cloud architecture 
-              and machine learning while seeking opportunities to apply these skills 
-              in impactful internships and projects.
+              Outside of academics, I serve as Vice President of UA Club Tennis, managing a 150+ 
+              member roster and handling team logistics. I also represent the College of Engineering 
+              as an Engineering Ambassador, leading campus tours and recruitment events.
             </p>
           </div>
           
